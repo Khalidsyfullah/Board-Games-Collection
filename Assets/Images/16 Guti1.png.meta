@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 9d7ac36044600f24982e900e6872c371
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 16 Guti1_0
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1762
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f0f32fbf16b1b4dbe2f529ccbb13e4
+      internalID: 968625305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_5
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1763
+        width: 72
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab4bc04870f68a48ba3905e4a1f7c72
+      internalID: 1624813132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1762
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677f7973ba951384d8cc11e50ddbbfb8
+      internalID: 166339708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1794
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1302e50f0e4ac4094ef2ce73875947
+      internalID: 226811121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_11
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1783
+        width: 26
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cf3c68eb18c0441a755e1d2104bc0a
+      internalID: 996894486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 294
+        width: 903
+        height: 1348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b023fc4be237f11488bd7a1903bf7d55
+      internalID: -397646639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_30
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1320
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37aa64bf3e61f5448327f1509eb3ee4
+      internalID: 399017831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_31
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1314
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122530bbebfdee6489abafe67b5ed728
+      internalID: 1910547092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_43
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 690
+        width: 6
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd32c96c89ac2694292f151b7c8f6639
+      internalID: 1941951102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_46
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 625
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6748acd3e7ca347ad8f4b813f2f1e7
+      internalID: 1785403839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_47
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 619
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2774536ab7e1a9449196efab1b79649
+      internalID: 265054406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16 Guti1_55
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 276
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8bf818b3b80ea4fae2bb05ab27cc8d
+      internalID: -1904776812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      16 Guti1_0: 968625305
+      16 Guti1_1: 582560007
+      16 Guti1_10: -2010029113
+      16 Guti1_11: 996894486
+      16 Guti1_12: -264450586
+      16 Guti1_13: 479315799
+      16 Guti1_14: -1402291566
+      16 Guti1_15: 1930455576
+      16 Guti1_16: 221849916
+      16 Guti1_17: -1354682916
+      16 Guti1_18: -161151753
+      16 Guti1_19: -8263274
+      16 Guti1_2: -1270203992
+      16 Guti1_20: 1320985391
+      16 Guti1_21: -1882156346
+      16 Guti1_22: -744732543
+      16 Guti1_23: 361632828
+      16 Guti1_24: 1944957093
+      16 Guti1_25: 658419808
+      16 Guti1_26: -397646639
+      16 Guti1_27: 250710835
+      16 Guti1_28: 791244161
+      16 Guti1_29: -286512549
+      16 Guti1_3: -1899956981
+      16 Guti1_30: 399017831
+      16 Guti1_31: 1910547092
+      16 Guti1_32: 81977797
+      16 Guti1_33: 397146033
+      16 Guti1_34: 2041197971
+      16 Guti1_35: -30336449
+      16 Guti1_36: 1043171885
+      16 Guti1_37: -1272464738
+      16 Guti1_38: 1000575477
+      16 Guti1_39: -635784839
+      16 Guti1_4: 1684980901
+      16 Guti1_40: -1392166641
+      16 Guti1_41: 1859524363
+      16 Guti1_42: -811085505
+      16 Guti1_43: 1941951102
+      16 Guti1_44: 357477421
+      16 Guti1_45: 1883657298
+      16 Guti1_46: 1785403839
+      16 Guti1_47: 265054406
+      16 Guti1_48: 848239145
+      16 Guti1_49: -29733495
+      16 Guti1_5: 1624813132
+      16 Guti1_50: -1323127794
+      16 Guti1_51: 195338400
+      16 Guti1_52: 2051176113
+      16 Guti1_53: 1376695856
+      16 Guti1_54: 2127022583
+      16 Guti1_55: -1904776812
+      16 Guti1_56: -190864871
+      16 Guti1_6: 924932552
+      16 Guti1_7: 166339708
+      16 Guti1_8: 1866516545
+      16 Guti1_9: 226811121
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
