@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 3 Guti_9
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 585
+        width: 740
+        height: 745
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f43ef30934c86c4f9a95ee094e171f4
+      internalID: 145601852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +159,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      3 Guti_0: -667107552
+      3 Guti_1: -1680890981
+      3 Guti_10: 993094839
+      3 Guti_11: -1273036407
+      3 Guti_12: 2092825334
+      3 Guti_13: -258386093
+      3 Guti_14: -1067443800
+      3 Guti_15: -1868597794
+      3 Guti_16: -182015909
+      3 Guti_17: -1083329966
+      3 Guti_18: 318502243
+      3 Guti_19: -1351665218
+      3 Guti_2: 351827079
+      3 Guti_20: -1918245481
+      3 Guti_21: 528225179
+      3 Guti_22: 1903450150
+      3 Guti_23: 773380322
+      3 Guti_24: -1871499131
+      3 Guti_25: -2007660214
+      3 Guti_26: -1721457781
+      3 Guti_27: 1786475276
+      3 Guti_28: -842538910
+      3 Guti_29: -438193428
+      3 Guti_3: -1576691604
+      3 Guti_4: 1036422511
+      3 Guti_5: -369719800
+      3 Guti_6: -476572727
+      3 Guti_7: -444207645
+      3 Guti_8: 1500489340
+      3 Guti_9: 145601852
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

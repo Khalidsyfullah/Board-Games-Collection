@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Artboard 1draw4_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 496
+        width: 949
+        height: 947
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45909460d252814f8cb0bddc077c170
+      internalID: 853360737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +159,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Artboard 1draw4_0: 387635792
+      Artboard 1draw4_1: 1480945568
+      Artboard 1draw4_10: 763138781
+      Artboard 1draw4_11: 1649126958
+      Artboard 1draw4_12: -1983476654
+      Artboard 1draw4_13: -1324457795
+      Artboard 1draw4_14: -2073003629
+      Artboard 1draw4_15: -1520697874
+      Artboard 1draw4_16: 1790056310
+      Artboard 1draw4_17: 1407803969
+      Artboard 1draw4_18: 1487876005
+      Artboard 1draw4_19: 1851074887
+      Artboard 1draw4_2: -524142975
+      Artboard 1draw4_20: -133021360
+      Artboard 1draw4_21: 1949697314
+      Artboard 1draw4_22: -803019166
+      Artboard 1draw4_23: 1956432198
+      Artboard 1draw4_24: 1854138461
+      Artboard 1draw4_25: 1821298737
+      Artboard 1draw4_26: 828798081
+      Artboard 1draw4_27: -85243633
+      Artboard 1draw4_3: -746330118
+      Artboard 1draw4_4: -461902552
+      Artboard 1draw4_5: 1749628319
+      Artboard 1draw4_6: 1362333853
+      Artboard 1draw4_7: 853360737
+      Artboard 1draw4_8: 1606214363
+      Artboard 1draw4_9: -1625800692
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -611,6 +611,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bgassets_23
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 319
+        width: 409
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b187e770ddf894ead6da12323094cc
+      internalID: 1184031073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -638,6 +659,7 @@ TextureImporter:
       bgassets_20: 1792009995
       bgassets_21: 1421842914
       bgassets_22: 2124535698
+      bgassets_23: 1184031073
       bgassets_3: 1305023366
       bgassets_4: -1001990788
       bgassets_5: -975645322

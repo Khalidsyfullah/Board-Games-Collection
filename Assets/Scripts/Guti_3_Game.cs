@@ -99,7 +99,7 @@ public class Guti_3_Game : MonoBehaviour
         playSound(0);
 
 
-        movesCount = PlayerPrefs.GetInt("movesCount", 20);
+        movesCount = PlayerPrefs.GetInt("movesCount", 30);
         total_moves_count = movesCount;
         moveLeftText.text = movesCount.ToString();
 
@@ -1109,10 +1109,13 @@ public class Guti_3_Game : MonoBehaviour
     {
         List<GameObject> possibleValues = new List<GameObject>();
         List<int> possibleAttackValues = new List<int>();
-        int current_position_move = -1;
+        int current_position_move;
         int position_move = -1;
         bool isAttackDone = false;
 
+        List<int> possibleMovesCollector = new List<int>();
+
+        int indexofFirst = -1;
 
         int num_opponent = (current_player == 2) ? 1 : 2;
 
@@ -1120,38 +1123,84 @@ public class Guti_3_Game : MonoBehaviour
         {
             if (grid_position[il] == current_player)
             {
-                current_position_move = il;
+                if(indexofFirst == -1)
+                {
+                    indexofFirst = il;
+                }
 
                 for (int i = 0; i < grid_board.Length; i++)
                 {
                     if (grid_connector_secondary[il, i] == -1 && grid_position[i] == 0)
                     {
-                        possibleValues.Add(grid_board[i]);
-                        possibleAttackValues.Add(-1);
+                        possibleMovesCollector.Add(il);
+                        break;
                     }
 
                     else if (grid_connector_secondary[il, i] == -1 && grid_position[i] == num_opponent)
                     {
+                        bool indicator = false;
                         for (int j = 0; j < grid_board.Length; j++)
                         {
                             if (grid_connector_secondary[il, j] == i && grid_position[j] == 0)
                             {
-                                possibleValues.Add(grid_board[j]);
-                                possibleAttackValues.Add(i);
+                                indicator = true;
+                                possibleMovesCollector.Add(il);
+                                break;
                             }
 
                         }
+                        if (indicator)
+                        {
+                            break;
+                        }
                     }
-                }
-
-
-                if (possibleValues.Count > 0)
-                {
-                    position_move = UnityEngine.Random.Range(0, possibleValues.Count);
-                    break;
                 }
             }
         }
+
+
+        if( possibleMovesCollector.Count > 0)
+        {
+            int ranredX = UnityEngine.Random.Range(0, possibleMovesCollector.Count);
+            current_position_move = possibleMovesCollector[ranredX];
+        }
+        else
+        {
+            current_position_move = indexofFirst;
+        }
+
+
+
+        for (int i = 0; i < grid_board.Length; i++)
+        {
+            if (grid_connector_secondary[current_position_move, i] == -1 && grid_position[i] == 0)
+            {
+                possibleValues.Add(grid_board[i]);
+                possibleAttackValues.Add(-1);
+            }
+
+            else if (grid_connector_secondary[current_position_move, i] == -1 && grid_position[i] == num_opponent)
+            {
+                for (int j = 0; j < grid_board.Length; j++)
+                {
+                    if (grid_connector_secondary[current_position_move, j] == i && grid_position[j] == 0)
+                    {
+                        possibleValues.Add(grid_board[j]);
+                        possibleAttackValues.Add(i);
+                    }
+
+                }
+            }
+        }
+
+
+        if (possibleValues.Count > 0)
+        {
+            position_move = UnityEngine.Random.Range(0, possibleValues.Count);
+        }
+
+
+
 
         int cur_pos = getIndexofGO(possibleValues[position_move]);
 

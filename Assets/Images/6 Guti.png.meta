@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 6 Guti_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 353
+        width: 731
+        height: 1231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36903f2360a322d4eb90b703acfad872
+      internalID: 110401885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +159,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      6 Guti_0: -1026089233
+      6 Guti_1: -521429010
+      6 Guti_10: -348830936
+      6 Guti_11: 344068175
+      6 Guti_12: -1809306237
+      6 Guti_2: 992863265
+      6 Guti_3: 1480914833
+      6 Guti_4: 110401885
+      6 Guti_5: 568214779
+      6 Guti_6: 1023783602
+      6 Guti_7: -277174319
+      6 Guti_8: 1786881536
+      6 Guti_9: 1464324157
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

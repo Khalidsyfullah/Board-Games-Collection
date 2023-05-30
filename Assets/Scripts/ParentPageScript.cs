@@ -9,15 +9,24 @@ public class ParentPageScript : MonoBehaviour
 {
     public Button[] moveButton = new Button[3];
     public Button[] difficultyButton = new Button[3];
-    public Button[] modeButton = new Button[4];
+    public Button[] gameButton = new Button[5];
     public Button playButton;
-    public TextMeshProUGUI textMeshPro;
+    public Button cancelButton;
+
+    int sound = 0;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
+    public Sprite[] buttonSprite = new Sprite[2];
+    public RuntimeAnimatorController animatorControllerGame;
 
     int movesCount = 0;
     int diifculty = 0;
-    int mode = 0;
+    int gameNumber = 0;
 
-    int[] movesValues = {20, 40, 80 };
+    int[] movesValues = {30, 50, 100 };
+    string[] gamenameList = new string[] { "3_Guti_Game", "6_Guti_Game", "16_Guti_Game", "laukatakati", "Pretwa" };
+    string[] gameprefabsList = new string[] { "TinGuti", "SixGuti", "SholoGuti", "Laukatakati", "Laukatakati" };
     void Start()
     {
         moveButton[0].onClick.AddListener(onmove1Clicked);
@@ -26,99 +35,210 @@ public class ParentPageScript : MonoBehaviour
         difficultyButton[0].onClick.AddListener(ondiff1Clicked);
         difficultyButton[1].onClick.AddListener(ondiff2Clicked);
         difficultyButton[2].onClick.AddListener(ondiff3Clicked);
-        modeButton[0].onClick.AddListener(ondmode1Clicked);
-        modeButton[1].onClick.AddListener (ondmode2Clicked);
-        modeButton[2].onClick.AddListener(ondmode3Clicked);
-        modeButton[3].onClick.AddListener(ondmode4Clicked);
+        gameButton[0].onClick.AddListener(onPlaytinGuti);
+        gameButton[1].onClick.AddListener(onPlaysixGuti); 
+        gameButton[2].onClick.AddListener(onPlaysholoGuti);
+        gameButton[3].onClick.AddListener(onPlaylaukatakati);
+        gameButton[4].onClick.AddListener(onPlayPretwa);
+        cancelButton.onClick.AddListener(onCancelClicked);
         playButton.onClick.AddListener(onPlayClicked);
-        moveButton[movesCount].GetComponent<Image>().color = Color.gray;
-        difficultyButton[diifculty].GetComponent<Image>().color = Color.gray;
-        modeButton[mode].GetComponent<Image>().color = Color.gray;
+
+        sound = PlayerPrefs.GetInt("soundSettings", 1);
+        movesCount = PlayerPrefs.GetInt("movesCountNum", 0);
+        diifculty = PlayerPrefs.GetInt("dificulty", 0);
+        gameNumber = PlayerPrefs.GetInt("gameNumber", 0);
+
+        moveButton[movesCount].GetComponent<Image>().sprite = buttonSprite[1];
+        difficultyButton[diifculty].GetComponent<Image>().sprite = buttonSprite[1];
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = animatorControllerGame;
+    }
+
+    void playButtonClickSound()
+    {
+        if (sound != 1) return;
+        audioSource.PlayOneShot(audioClip);
     }
 
     void onmove1Clicked()
     {
-        moveButton[movesCount].GetComponent<Image>().color = Color.white;
+        playButtonClickSound();
+        if(movesCount == 0)
+        {
+            return;
+        }
+
+        moveButton[movesCount].GetComponent<Image>().sprite = buttonSprite[0];
         movesCount = 0;
-        moveButton[movesCount].GetComponent<Image>().color = Color.gray;
+        moveButton[movesCount].GetComponent<Image>().sprite = buttonSprite[1];
+        PlayerPrefs.SetInt("movesCountNum", movesCount);
     }
 
     void onmove2Clicked()
     {
-        moveButton[movesCount].GetComponent<Image>().color = Color.white;
+        playButtonClickSound();
+        if (movesCount == 1)
+        {
+            return;
+        }
+
+        moveButton[movesCount].GetComponent<Image>().sprite = buttonSprite[0];
         movesCount = 1;
-        moveButton[movesCount].GetComponent<Image>().color = Color.gray;
+        moveButton[movesCount].GetComponent<Image>().sprite = buttonSprite[1];
+        PlayerPrefs.SetInt("movesCountNum", movesCount);
     }
 
     void onmove3Clicked()
     {
-        moveButton[movesCount].GetComponent<Image>().color = Color.white;
+        playButtonClickSound();
+        if (movesCount == 2)
+        {
+            return;
+        }
+
+        moveButton[movesCount].GetComponent<Image>().sprite = buttonSprite[0];
         movesCount = 2;
-        moveButton[movesCount].GetComponent<Image>().color = Color.gray;
+        moveButton[movesCount].GetComponent<Image>().sprite = buttonSprite[1];
+        PlayerPrefs.SetInt("movesCountNum", movesCount);
     }
 
     void ondiff1Clicked()
     {
-        difficultyButton[diifculty].GetComponent<Image>().color = Color.white;
+        playButtonClickSound();
+        if (diifculty == 0)
+        {
+            return;
+        }
+
+        difficultyButton[diifculty].GetComponent<Image>().sprite = buttonSprite[0];
         diifculty = 0;
-        difficultyButton[diifculty].GetComponent<Image>().color = Color.gray;
+        difficultyButton[diifculty].GetComponent<Image>().sprite = buttonSprite[1];
+        PlayerPrefs.SetInt("dificulty", diifculty);
     }
 
     void ondiff2Clicked()
     {
-        difficultyButton[diifculty].GetComponent<Image>().color = Color.white;
+        playButtonClickSound();
+        if (diifculty == 1)
+        {
+            return;
+        }
+
+        difficultyButton[diifculty].GetComponent<Image>().sprite = buttonSprite[0];
         diifculty = 1;
-        difficultyButton[diifculty].GetComponent<Image>().color = Color.gray;
+        difficultyButton[diifculty].GetComponent<Image>().sprite = buttonSprite[1];
+        PlayerPrefs.SetInt("dificulty", diifculty);
     }
 
     void ondiff3Clicked()
     {
-        difficultyButton[diifculty].GetComponent<Image>().color = Color.white;
+        playButtonClickSound();
+        if (diifculty == 2)
+        {
+            return;
+        }
+
+        difficultyButton[diifculty].GetComponent<Image>().sprite = buttonSprite[0];
         diifculty = 2;
-        difficultyButton[diifculty].GetComponent<Image>().color = Color.gray;
+        difficultyButton[diifculty].GetComponent<Image>().sprite = buttonSprite[1];
+        PlayerPrefs.SetInt("dificulty", diifculty);
     }
 
 
-    void ondmode1Clicked()
+    void onPlaytinGuti()
     {
-        modeButton[mode].GetComponent<Image>().color = Color.white;
-        mode = 0;
-        modeButton[mode].GetComponent<Image>().color = Color.gray;
+        playButtonClickSound();
+        if (gameNumber == 0)
+        {
+            return;
+        }
+
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = null;
+        gameNumber = 0;
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = animatorControllerGame;
+        PlayerPrefs.SetInt("gameNumber", gameNumber);
     }
 
-    void ondmode2Clicked()
+
+    void onPlaysixGuti()
     {
-        modeButton[mode].GetComponent<Image>().color = Color.white;
-        mode = 1;
-        modeButton[mode].GetComponent<Image>().color = Color.gray;
+        playButtonClickSound();
+        if (gameNumber == 1)
+        {
+            return;
+        }
+
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = null;
+        gameNumber = 1;
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = animatorControllerGame;
+        PlayerPrefs.SetInt("gameNumber", gameNumber);
     }
 
-    void ondmode3Clicked()
+    void onPlaysholoGuti()
     {
-        modeButton[mode].GetComponent<Image>().color = Color.white;
-        mode = 2;
-        modeButton[mode].GetComponent<Image>().color = Color.gray;
+        playButtonClickSound();
+        if (gameNumber == 2)
+        {
+            return;
+        }
+
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = null;
+        gameNumber = 2;
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = animatorControllerGame;
+        PlayerPrefs.SetInt("gameNumber", gameNumber);
     }
 
-    void ondmode4Clicked()
+
+    void onPlaylaukatakati()
     {
-        modeButton[mode].GetComponent<Image>().color = Color.white;
-        mode = 3;
-        modeButton[mode].GetComponent<Image>().color = Color.gray;
+        playButtonClickSound();
+        if (gameNumber == 3)
+        {
+            return;
+        }
+
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = null;
+        gameNumber = 3;
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = animatorControllerGame;
+        PlayerPrefs.SetInt("gameNumber", gameNumber);
     }
+
+
+    void onPlayPretwa()
+    {
+        playButtonClickSound();
+        if (gameNumber == 4)
+        {
+            return;
+        }
+
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = null;
+        gameNumber = 4;
+        gameButton[gameNumber].GetComponent<Animator>().runtimeAnimatorController = animatorControllerGame;
+        PlayerPrefs.SetInt("gameNumber", gameNumber);
+    }
+
 
     void onPlayClicked()
     {
+        playButtonClickSound();
         PlayerPrefs.SetInt("movesCount", movesValues[movesCount]);
-
-        if(mode != 0)
-        {
-            PlayerPrefs.SetInt("TinGuti", 0);
-        }
-        else
-        {
-            PlayerPrefs.SetInt("TinGuti", diifculty+1);
-        }
-        SceneManager.LoadSceneAsync("3_Guti_Game");
+        PlayerPrefs.SetInt(gameprefabsList[gameNumber], diifculty+1);
+        SceneManager.LoadSceneAsync(gamenameList[gameNumber]);
     }
+
+    void onCancelClicked()
+    {
+        playButtonClickSound();
+        SceneManager.LoadSceneAsync("Homepage");
+    }
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            onCancelClicked();
+        }
+    }
+
 }
